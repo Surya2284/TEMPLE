@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Donation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f7680;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            color: #6c5ce7;
+        }
+
+        .donation-form {
+            padding: 20px;
+            background-color: #f1f2f6;
+            border-radius: 8px;
+        }
+
+        .donation-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .donation-form input, .donation-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .donation-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #218853d3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .donation-form button:hover {
+            background-color: #13251c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #020303;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Donate to Support Our Temple
+</header>
+
+<div class="container">
+    <div class="banner">
+        <img src="don.jpg" alt="Temple Image">
+    </div>
+
+    <div class="content">
+        <h2>ABOUT US</h2>
+        <p>
+            Our temple has been serving the community for decades, providing spiritual guidance, hosting cultural events, and
+            aiding those in need. Your donation helps us maintain the temple and organize various community initiatives.
+        </p>
+    </div>
+
+    <div class="donation-form">
+        <h2>Make a Donation</h2>
+        <form action="/submit-donation" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="amount">Donation Amount (USD)</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Temple Trust. All rights reserved.
+</footer>
+
+</body>
+</html>

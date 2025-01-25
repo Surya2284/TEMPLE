@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Temples Gallery</title>
+    <style>
+        h1{
+            font-family: cursive;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #6b0707;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item .description {
+            padding: 1rem;
+        }
+
+        .gallery-item h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .gallery-item p {
+            margin: 0.5rem 0 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery of Great Indian Temples</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="men.jpg" alt="Meenakshi Temple">
+            <div class="description">
+                <h3>Meenakshi Temple</h3>
+                <p>Located in Madurai, Tamil Nadu, this temple is dedicated to Goddess Meenakshi and Lord Sundareswarar.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="brid.jpg" alt="Brihadeeswarar Temple">
+            <div class="description">
+                <h3>Brihadeeswarar Temple</h3>
+                <p>A UNESCO World Heritage Site in Thanjavur, Tamil Nadu, known for its stunning architecture.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="jag.jpg" alt="Jagannath Temple">
+            <div class="description">
+                <h3>Jagannath Temple</h3>
+                <p>Located in Puri, Odisha, this temple is famous for its annual Rath Yatra (chariot festival).</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="som.jpg" alt="Somnath Temple">
+            <div class="description">
+                <h3>Somnath Temple</h3>
+                <p>Situated in Gujarat, it is one of the twelve Jyotirlinga shrines of Lord Shiva.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="tri.jpg" alt="Tirupati Balaji Temple">
+            <div class="description">
+                <h3>Tirupati Balaji Temple</h3>
+                <p>Located in Tirumala, Andhra Pradesh, it is one of the wealthiest temples in the world.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="kon.jpg" alt="Konark Sun Temple">
+            <div class="description">
+                <h3>Konark Sun Temple</h3>
+                <p>A 13th-century temple in Odisha, designed as a giant chariot dedicated to the Sun God.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
